@@ -15,3 +15,4 @@ if __name__ == '__main__':
     else:
         host_list = list(subnet.hosts())
         print(f"IP地址范围：{host_list[0]} ~ {host_list[num - 1]}")
+

@@ -56,4 +56,3 @@ elif reply_pkt[0].getlayer(DHCP).options[0][1] == 5:
     print("IP address %s has been successfully grabbed." % offer_ip)
 else:
     print("Error: DHCP pool has been exhausted.")
-
