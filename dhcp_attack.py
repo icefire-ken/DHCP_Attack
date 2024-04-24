@@ -50,6 +50,6 @@ def get_ip_range(subnet_ip, mask):
 
 
 if __name__ == '__main__':
-    # get_nic_info()
+    get_nic_info()
     a = get_ip_range('192.168.1.1', '255.255.255.0')
     print(a)
