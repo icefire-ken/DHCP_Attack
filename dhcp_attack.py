@@ -19,11 +19,11 @@ def get_nic_info():
                 temp_dict['MAC'] = addr.address
         nic_list.append(temp_dict)
 
-    for i in range(len(nic_list)):
-        print(f'\n网卡[{i}]：{nic_list[i]["网卡"]}')
-        print(f'\t\tMAC：{nic_list[i]["MAC"]}', end='\t')
-        print(f'IP：{nic_list[i]["IP"]}', end='\t')
-        print(f'Mask：{nic_list[i]["Mask"]}')
+    for _ in range(len(nic_list)):
+        print(f'\n网卡[{_+1}]：{nic_list[_]["网卡"]}')
+        print(f'\t\tMAC：{nic_list[_]["MAC"]}', end='\t')
+        print(f'IP：{nic_list[_]["IP"]}', end='\t')
+        print(f'Mask：{nic_list[_]["Mask"]}')
 
 
 def get_ip_range(subnet_ip, mask):
